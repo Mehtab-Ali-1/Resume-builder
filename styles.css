@@ -1,0 +1,114 @@
+/* Global styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d4a816;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fffaa1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="date"], textarea, select ,option{
+    width: 97%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #d95555;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#gender, #status  {
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 12px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Output resume section */
+#resume-output {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #e9f6f3;
+}
+
+#resume-output h2 {
+    text-align: center;
+    color: #021688;
+}
+
+#resume-content h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #2646fd;
+}
+
+h3 {
+    color: #2646fd;
+}
+
+#resume-content p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.hidden {
+    display: none;
+}

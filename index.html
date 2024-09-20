@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form id="resume-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="fathername">Father's Name:</label>
+                <input type="text" id="fathername" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone">
+
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" required>
+
+                <label for="birthplace">Birthplace:</label>
+                <input type="text" id="birthplace" required>
+
+                <label for="nationality">Nationality:</label>
+                <input type="text" id="nationality" required>
+
+                <label for="status">Status:</label>
+                <select id="status" required>
+                    <option value="" disabled selected>Select Status</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                </select>
+
+                <label for="religion">Religion:</label>
+                <input type="text" id="religion" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Experience</legend>
+                <label for="experience">Experience:</label>
+                <textarea id="experience"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Education</legend>
+                <label for="education">Education:</label>
+                <textarea id="education"></textarea>
+            </fieldset>
+
+            <button type="button" id="generate-resume">Generate Resume</button>
+        </form>
+
+        <div id="resume-output" class="hidden">
+            <h2>Generated Resume</h2>
+            <div id="resume-content"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
